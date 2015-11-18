@@ -1,0 +1,10 @@
+{
+  "name": "namics/php-spriter",
+  "licence": "MIT",
+  "autoload": {
+    "classmap": [
+      "spriter/spriter.class.php",
+      "spriter/icon.class.php"
+    ]
+  }
+}

@@ -28,6 +28,7 @@ class Spriter {
 	protected $forceGenerate = false;
 	protected $ignoreHover = false;
 	protected $hoverSuffix = "-hover";
+	protected $checksumDirectory = __DIR__;
 
 	protected $targets = array();
 
@@ -394,7 +395,7 @@ class Spriter {
 	}
 
 	private function generateChecksum() {
-		file_put_contents( __DIR__ . "/" . $this->getChecksumName(), $this->getChecksum() );
+		file_put_contents( $this->checksumDirectory . "/" . $this->getChecksumName(), $this->getChecksum() );
 	}
 
 	private function getChecksumName() {
